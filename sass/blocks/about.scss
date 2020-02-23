@@ -1,0 +1,42 @@
+.about__wrap {
+    padding: 5px;
+
+    .about__main {
+        display: flex;
+        min-height: 720px;
+
+        .about__bg {            
+            width: 50%;
+            height: auto;
+            background: url('../img/about-1.jpg') no-repeat 50% 0;
+            background-size: 70%;
+        }
+
+        .about__description {
+            box-sizing: border-box;
+            width: 50%;
+            padding-right: 20%;
+
+            .about__title {
+                font-size: 72px;
+                line-height: 1;
+                text-transform: uppercase;
+                font-family: 'Bebas Neue';
+                font-weight: 700;
+                color: $primary;
+                margin-top: 30%;
+                margin-bottom: 30px;
+            }
+
+            .about__text {
+                font-size: 12px;
+                line-height: 13px;
+                margin-top: 0; 
+            }
+        }
+    }
+
+    .about__crew {
+        min-height: 720px;
+    }
+}

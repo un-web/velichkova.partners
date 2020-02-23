@@ -1,0 +1,104 @@
+.contacts__wrap {
+    max-width: 100%;
+    padding: 5px;
+    padding-bottom: 0;
+    padding-top: 55px;
+
+    .contacts__title {        
+        @include visually-hidden;
+    }
+
+    .contacts__main {
+        display: flex;
+
+        .contacts__map {
+            width: 50%;
+            min-height: 720px;
+        }
+
+        .contacts__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            min-height: 720px;
+            background-color: $primary;
+
+            .contacts__item:first-child {
+                margin-top: 35%;
+                margin-left: 7.2%;
+                margin-bottom: 30px;
+            }           
+
+            .contacts__item:nth-child(2) {
+                margin-left: 7.2%;
+                margin-bottom: 37.2%;
+            }
+
+            .contacts__name {
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 600;
+                color: $white;
+                margin: 0;
+            }
+
+            .contacts__contact {
+                display: flex;
+                align-items: center;
+                padding-left: 3px;
+                color: $white;
+                text-decoration: none;
+
+                svg {
+                    width: 10px;
+                    height: 12px;
+                    margin-right: 5px;
+                    fill: $white;
+                    transition-property: fill;
+                    transition-duration: 0.3s;                    
+
+                    &.contacts__phone {
+                        width: 9px;
+                        height: 12px;
+                    }
+
+                    &.contacts__dog {
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+
+                .contacts__text {
+                    margin: 0;
+                    color: $white;
+                    transition: color 0.3s ease-in-out;
+                }
+            }               
+
+            .contacts__contact p {
+                color: $white;
+            }
+
+            .contacts__contact--link:hover {
+
+                p {
+                    color: darken($white, 15%);
+                }
+
+                svg {
+                    fill: darken($white, 15%);
+                }
+            }
+
+            .contacts__text {
+                margin: 0;
+                color: $white;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+}

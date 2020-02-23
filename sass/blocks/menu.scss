@@ -1,0 +1,33 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu__element:not(:last-child) {
+    margin-right: 35px;
+}
+
+.menu__link {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    color: $second;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: darken($second, 35%);
+    }
+}
+
+.menu__link--active {
+    color: $primary;
+
+    &:hover {
+        color: $primary;
+    }
+}
+

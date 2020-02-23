@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 12px;
+	line-height: 13px;
+	font-weight: 400;
+	color: $black;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	// overflow-wrap: break-word;
+	// word-wrap: break-word;
+}
+
+//Общая обертка для всей верстки
+.container {                
+	@include min-max(320px, 100%, 0);
+	background-color: $white;
+}
+
+//Обертка для контентной части
+.wrap {
+	@include min-max(320px, 1220px, 15px);
+}

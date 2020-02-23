@@ -1,0 +1,43 @@
+.service {
+    position: relative;
+
+    .service__wrap {
+        max-width: 585px;
+        padding: 5px;
+        padding-bottom: 5%;
+        padding-top: 5%;
+
+        .service__title {
+            @include visually-hidden;
+        }
+
+        .service__item {
+            display: flex;
+            flex-direction: column;
+
+            .service__photo {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 15px;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+
+            .service__name {
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 14px;
+                line-height: 1;
+                font-weight: 700;
+                color: $primary;
+            }
+
+            .service__description {
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 12px;
+                line-height: 13px;
+            }
+        }
+    }
+}
