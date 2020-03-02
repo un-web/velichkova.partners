@@ -35,3 +35,39 @@
         margin-right: 20px;
     }
 }
+
+@media (max-width: $desktop-width) {
+
+    .socials {
+    
+        .social__item {
+    
+            svg {
+                width: 19px;
+                height: 26px;
+                fill: $white;
+    
+                &.socials__dog,
+                &.socials__facebook,
+                &.socials__instagram {
+                    width: 29px;
+                    height: 29px;
+                }
+    
+                &.socials__youtube {
+                    width: 30px;
+                    height: 25px;
+                }
+
+                &:hover,
+                &:active {
+                    fill: $white;
+                }
+            }
+        }
+    
+        .social__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}

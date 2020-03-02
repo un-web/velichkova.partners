@@ -99,14 +99,40 @@
 .publications .scroll__list {
     margin-top: 100px;
     margin-bottom: 0;
+
+    @media (max-width: $desktop-width) {
+        margin-top: 60px;
+    }
 }
 
 .publication .scroll__list {
     margin-top: 100px;
     margin-bottom: 0;
+
+    @media (max-width: $desktop-width) {
+        margin-top: 60px;
+    }
 }
 
 .news .scroll__list {
     margin-top: 100px;
     margin-bottom: 0;
+
+    @media (max-width: $desktop-width) {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: $desktop-width) {
+    .scroll {
+        display: none;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .scroll__list .scroll__item:nth-child(6),
+    .scroll__list .scroll__item:nth-child(7),
+    .scroll__list .scroll__item:nth-child(8) {
+        display: none;
+    }
 }

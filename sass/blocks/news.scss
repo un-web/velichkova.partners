@@ -1,6 +1,8 @@
-.news__title {
-    @include visually-hidden;
-}
+@media (min-width: $desktop-width) {
+    .news__title {
+        @include visually-hidden;
+    }
+}  
 
 .news__wrap {
     max-width: 650px;
@@ -56,5 +58,33 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: $desktop-width) {
+    .news {
+        margin-top: 75px;
+    }
+    
+    .news__title {
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 0;
+        font-size: 72px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $primary;
+        font-family: 'Bebas Neue';
+        padding-left: 20px;
+        padding-top: 15px;
+    }
+    
+    .news__wrap {
+        max-width: 100%;
+        padding-top: 0; 
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
