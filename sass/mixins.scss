@@ -9,7 +9,7 @@
 
 //Устанавливает максимальную и минимальную ширину для элемента, паддинги слева и справа, центрует
 @mixin min-max($min-width, $max-width, $padding) {
-  min-width: $min-width;
+  // min-width: $min-width;
   max-width: $max-width;
   padding: 0 $padding;
   box-sizing: border-box;

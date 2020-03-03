@@ -114,6 +114,66 @@
 		}
 	}
 
+	@media (max-width: $desktop-width) {
+
+		.owl-nav {
+			position: relative;
+			z-index: 2;
+			width: 75%;
+			display: flex;
+			margin: 0 auto;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.owl-nav button.owl-prev {
+			position: static;
+			margin-top: 15px;
+		}
+	
+		.owl-nav button.owl-next {
+			position: static;
+			margin-top: 15px;
+		}
+	}
+
+	.about__gallery .owl-nav {
+		width: 100%;
+		position: relative;
+	}
+
+	.about__gallery .owl-nav button.owl-prev {
+		position: absolute;
+		bottom: 17px;
+		left: -30px;
+		background: url('../img/ellipse.png') no-repeat 50% 50%;
+		width: 10px;
+		height: 10px;
+		transition: background-color 0.3s ease-in-out;
+		outline: none;
+
+		&:hover {
+			background: url('../img/ellipse.png') no-repeat 50% 50%;
+			background-color: rgba(0,0,0,0.1);
+		}
+	}
+
+	.about__gallery .owl-nav button.owl-next {
+		position: absolute;
+		bottom: 17px;
+		right: 10px;
+		background: url('../img/ellipse.png') no-repeat 50% 50%;
+		width: 10px;
+		height: 10px;
+		transition: background-color 0.3s ease-in-out;
+		outline: none;
+
+		&:hover {
+			background: url('../img/ellipse.png') no-repeat 50% 50%;
+			background-color: rgba(0,0,0,0.1);
+		}
+	}
+
 	&.owl-loaded {
 		display: block;
 	}

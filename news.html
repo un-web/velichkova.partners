@@ -5,73 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Новости</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
 </head>
 
-<body>
+<body class="nav-menu">
     <div class="container">
 
         <header class="header">
-            <div class="header__wrap wrap">
-                <a class="header__logo" href="index.html">
-                    <img src="img/logo.png" alt="Логотип">
-                </a>
-                <nav>
-                    <ul class="menu header__menu">
-                        <li class="menu__element">
-                            <a class="menu__link" href="about.html">О конторе</a>
+            <div class="header__wrap header__wrap--closed wrap">
+                <a class="header__logo" href="index.html"></a>
+                <div class="header-inner-wrapper">
+                    <nav class="menu-wrapper">
+                        <ul class="menu header__menu">
+                            <li class="menu__element">
+                                <a class="menu__link" href="about.html">О конторе</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="services.html">Услуги</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="publications.html">Публикации</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link menu__link--active">Новости</a>
+                            </li>
+                            <li class="menu__element">
+                                <a class="menu__link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="header__socials socials">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="socials__phone">
+                                    <use xlink:href="img/symbol/sprite.svg#phone"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="menu__element">
-                            <a class="menu__link" href="services.html">Услуги</a>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="socials__dog">
+                                    <use xlink:href="img/symbol/sprite.svg#@"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="menu__element">
-                            <a class="menu__link" href="publications.html">Публикации</a>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="socials__facebook">
+                                    <use xlink:href="img/symbol/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="menu__element">
-                            <a class="menu__link menu__link--active">Новости</a>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="socials__instagram">
+                                    <use xlink:href="img/symbol/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="menu__element">
-                            <a class="menu__link" href="contacts.html">Контакты</a>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="socials__youtube">
+                                    <use xlink:href="img/symbol/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="header__socials socials">
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="socials__phone">
-                                <use xlink:href="img/symbol/sprite.svg#phone"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="socials__dog">
-                                <use xlink:href="img/symbol/sprite.svg#@"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="socials__facebook">
-                                <use xlink:href="img/symbol/sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="socials__instagram">
-                                <use xlink:href="img/symbol/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="#">
-                            <svg class="socials__youtube">
-                                <use xlink:href="img/symbol/sprite.svg#youtube"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
+                <button class="header_hamburger hamburger" aria-label="Кнопка меню навигации">
+                    <span class="hamburger__item"></span>
+                </button>
             </div>
         </header>
 
@@ -643,13 +648,13 @@
             </div>
         </section>
 
-        <section class="scroll scroll--nav">
+        <div class="scroll scroll--nav">
             <a class="scroll__link" href="#">
                 <svg class="scroll__mouse">
                     <use xlink:href="img/symbol/sprite.svg#mouse"></use>
                 </svg>
             </a>
-        </section>
+        </div>
 
     </div>
     <script src="js/all.min.js"></script>

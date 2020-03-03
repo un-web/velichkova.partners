@@ -1,3 +1,8 @@
+.menu-wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -18,16 +23,44 @@
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
-    &:hover {
-        color: darken($second, 35%);
-    }
+    @media (min-width: $desktop-width) {
+        &:hover {
+            color: darken($second, 35%);
+        }
+    }    
 }
 
 .menu__link--active {
     color: $primary;
 
-    &:hover {
-        color: $primary;
-    }
+    @media (min-width: $desktop-width) {
+        &:hover {
+            color: $primary;
+        }
+    }    
 }
 
+@media (max-width: $desktop-width) {
+
+    .menu-wrapper {
+        margin: initial;
+        margin-bottom: 30px;
+    }
+
+    .menu__element:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__link {
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: $white;
+    }
+}

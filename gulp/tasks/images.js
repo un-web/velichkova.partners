@@ -7,9 +7,10 @@ module.exports = function () {
                 $.gp.imagemin.mozjpeg({ progressive: true }), //делаем изображения прогрессивными
                 $.imageminJpegRecompress({                   //сжимаем изображения jpeg
                     loops: 5,
-                    min: 65,
-                    max: 70,
-                    quality: 'medium'
+                    min: 80,
+                    max: 85,
+                    quality: 'high',
+                    accurate: true
                 }),
                 $.gp.imagemin.optipng({optimizationLevel: 3}), //сжимаем изображения png
                 $.pngquant({quality: [0.65,0.7], speed: 5}),
